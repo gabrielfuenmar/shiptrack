@@ -19,6 +19,7 @@ import pyarrow.parquet as pq
 import s3fs
 from controls import FLEET,COLORS
 from choropleth_trade_map import count_by_hexagon, choropleth_map
+import os
 
 AWS_KEY= os.environ.get('AWS_KEY', None)
 AWS_SECRET  = os.environ.get('AWS_SECRET', None)
