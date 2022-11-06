@@ -15,7 +15,6 @@ from datetime import datetime
 import plotly.graph_objects as go
 import h3
 import numpy as np
-import boto3
 import pyarrow.parquet as pq
 import s3fs
 from controls import FLEET,COLORS
