@@ -98,6 +98,20 @@ annotation_layout=dict(
 
 app.layout=html.Div(
                     [    #1
+                            # Top Banner
+                    html.Div(
+                        className="study-browser-banner row",
+                        children=[
+                            html.H2(className="h2-title", children="ANIMAL STUDY BROWSER"),
+                            html.Div(
+                                className="div-logo",
+                                children=html.Img(
+                                    className="logo", src=app.get_asset_url("dash-logo-new.png")
+                                ),
+                            ),
+                            html.H2(className="h2-title-mobile", children="ANIMAL STUDY BROWSER"),
+                        ],
+                    ),
                     dcc.Store(id="aggregate_data"),
                     # empty Div to trigger javascript file for graph resizing
                     html.Div(id="output-clientside"),
