@@ -38,6 +38,18 @@ body {
   box-shadow: 2px 2px 2px #ececec;
 }
 
+.h2-title, .h2-title-mobile{
+  font-family: 'Roboto';
+  display: inline-block;
+  letter-spacing: 3.8px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.h2-title-mobile{
+  display: none;
+}
+
 .bare_container {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
