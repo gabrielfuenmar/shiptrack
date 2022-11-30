@@ -99,60 +99,23 @@ annotation_layout=dict(
 app.layout=html.Div(
                     [    #1
                             # Top Banner
-                    html.Div(
-                        className="study-browser-banner row",
-                        children=[
-                            html.H2(className="h2-title", children="ANIMAL STUDY BROWSER"),
-                            html.Div(
-                                className="div-logo",
-                                children=html.Img(
-                                    className="logo", src=app.get_asset_url("dash-logo-new.png")
-                                ),
-                            ),
-                            html.H2(className="h2-title-mobile", children="ANIMAL STUDY BROWSER"),
-                        ],
-                    ),
                     dcc.Store(id="aggregate_data"),
                     # empty Div to trigger javascript file for graph resizing
                     html.Div(id="output-clientside"),
-                    html.Div(## 1.1
-                        [
-                        html.Div(## 1.1.1
-                            [##Empty
-                            ],
-                            className="one-third column",
-                        ),
-                        html.Div( ##1.1.2
-                            [
-                            html.H3(
-                                  "ShipTrack",
-                                  style={"margin-bottom": "0px"},
-                              ),
-                              html.H5(
-                                  "Utkilen statistics", style={"margin-top": "0px"}
-                              ),
-                            ],
-                            className="one-half column",
-                            id="title",
-                                ),
-                        html.Div(   ## 1.1.3
-                            [
+                    html.Div(
+                        className="study-browser-banner row",
+                        children=[
+                            html.H2(className="h2-title", children="SHIPTRACK"),
+                            html.H2(className="h2-title-mobile", children="UTKILEN STATISTICS"),
+                            html.Div([
                                 html.Button("Refresh", id="refresh-button"), 
                                 html.A(
                                     html.Button("Developer", id="home-button"),
                                     href="https://gabrielfuentes.org",
                                         )                  
-                            ],
-                            className="one-third column",
-                            id="button",
-                            style={
-                                "text-align": "center"},
-                                ),
+                            ])
                         ],
-                            id="header",
-                            className="row flex-display",
-                            style={"margin-bottom": "15px"},
-                            ),
+                    ),
                     html.Div( ###1.2
                         [ 
                         html.Div([                           
