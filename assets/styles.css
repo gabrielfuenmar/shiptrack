@@ -17,6 +17,13 @@ body {
   margin-left: 0.5%;
 }
 
+.study-browser-banner {
+  background: rgb(2,21,70);
+  color: white;
+  padding: 12px;
+  padding-left: 48px;
+}
+
 .datecontainer {
     display: flex;
     justify-content: space-evenly;
